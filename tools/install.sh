@@ -31,7 +31,7 @@ sys_deps=(
     ['npm']=$(command -v npm))
 declare -A app_deps
 app_deps=( ['gulp']=$(command -v gulp)
-    ['bower']=$(command -v bower))
+    ['bower']=$(command -v bower --allow-root))
 application_deps=""
 system_deps=""
 declare -A specific_pkg_names
@@ -230,7 +230,7 @@ install_pkgs() {
         eval $npm_global
     fi
 
-    printf $(bower install --verbose)
+    printf $(bower install --verbose --allow-root)
     printf $(gulp)
 }
 
