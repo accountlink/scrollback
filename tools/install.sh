@@ -36,7 +36,7 @@ application_deps=""
 system_deps=""
 declare -A specific_pkg_names
 specific_pkg_names=(
-    ['postgres']="apt-get:postgresql-9.4 apt-get:postgresql-contrib-9.4 yum:postgresql-9.4 pacman:postgresql "
+    ['postgres']="apt-get:postgresql-9.3 apt-get:postgresql-contrib-9.3 yum:postgresql-9.3 pacman:postgresql "
     ['nodejs']="apt-get:nodejs-legacy yum:nodejs pacman:nodejs"
     ['npm']="apt-get:npm yum:npm"
     ['git']="apt-get:git yum:git pacman:git"
